@@ -1,0 +1,37 @@
+What happens when you initialize a repository? Why do you need to do it?
+    Git creates control files and mark it as a master branch. Wue create repositories using " git init".
+    Initially there will be no commits yet. We can see that using "git log" and we can see the status of
+    the new repository using "git status".   
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+    The staging area is a temporary area used to add the files that will be tracked by the next commit.
+    The working area is where the original files are. After you update a file in the working are and before
+    you add it to the staging area the changes will not be available for the next commit..
+    Staging area is important because you can control wich files will be tracked by git in the repository 
+    using the git commit to add them to the staging area and use git status to confirm that they are the files
+    you really want to be tracked.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+    Adding the last updated files that we want to be part of the logical change.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+    Branches can be used when we want to try same new features that we still do not know if will work well, 
+    for example. In situations lik ethat, branches will help creating an logical branch to hold the commit
+    history apart from the master branch.
+
+How do the diagrams help you visualize the branch structure?
+    Diagrams are usefull because they help to control de history of commits per branch and to identify commits
+    that can not be reached for beeing out of any branch.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+    The final file will get a merge file with the changes made in the both branches.
+    The diasgrams help to have control of whst is really been merged.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+    An automatic commit will ensure that nothing is left behind. But, on the other hand, the user needs 
+    a lot of control over what is being modified.
